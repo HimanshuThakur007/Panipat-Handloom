@@ -1,0 +1,148 @@
+.image-style-side {
+    float: right;
+    margin-right: 20px; /* Adjust as needed */
+  }
+
+  .react-datepicker-wrapper {
+    display: block;
+    padding: 0;
+    border: 2px solid red;
+  }
+  .custom-datepicker-wrapper {
+    display: block; /* Override display */
+    padding: 0px;  /* Add padding */
+    border: 2px solid red; /* Customize border */
+  }
+
+
+  /* For Chrome, Safari, Edge, Opera */
+.no-spinner::-webkit-outer-spin-button,
+.no-spinner::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+.no-spinner[type='number'] {
+  -moz-appearance: textfield;
+}
+/* ------written  by  vivek singh rajput-------------- */
+  /* for react-datepicker */
+.react-datepicker-wrapper {
+  width: 100%; 
+}
+
+
+
+.ant-table-thead {
+  z-index: 0 !important; 
+}
+
+.ant-table-header {
+  z-index: 0 !important; 
+}
+
+/* for antd-table -header--- */
+.ant-table-thead > tr > th {
+  z-index: 0 !important; 
+}
+
+.ant-table-tbody {
+  z-index: 0 !important;
+  position: relative; 
+}
+/* for react  datepicker--- */
+.react-datepicker__portal {
+  z-index: 1000 !important; 
+}
+
+.react-datepicker-popper {
+  z-index: 1000 !important; 
+}
+
+/* for normal select------ */
+.custom-select-container select {
+  z-index: 1001 !important; 
+  position: relative;
+}
+
+
+/* --react select dropdown */
+.react-select__menu {
+  z-index: 1000 !important; 
+}
+
+
+/* ---antd  table  filter  dropdown-- */
+.ant-table-filter-dropdown {
+  z-index: 2000 !important; 
+}
+
+
+.custom-summary-row .ant-table-cell {
+  padding-top: 5px; 
+  padding-bottom: 5px; 
+}
+
+/* Optional: To control padding or margins specifically */
+.custom-summary-row {
+  padding-top: 5px;
+  padding-bottom: 5px; 
+}
+
+.border-red {
+  border: 1px solid red !important;
+}
+
+.custom-row {
+  height: 20px; /* Set your desired row height */
+}
+
+.custom-row td {
+  padding: 4px 8px; /* Decrease padding: top/bottom, left/right */
+}
+
+.ant-table-thead > tr > th {
+  height: 20px; /* Optional: Set the header height */
+  line-height: 20px; /* Center the text vertically */
+  padding: 1px 8px; /* Decrease padding in header cells */
+}
+
+.ant-table-tbody > tr > td {
+  height: 20px; /* Optional: Set the cell height */
+  line-height: 20px; /* Center the text vertically */
+}
+
+:where(.css-dev-only-do-not-override-1b0bdye).ant-table-wrapper .ant-table-cell, :where(.css-dev-only-do-not-override-1b0bdye).ant-table-wrapper .ant-table-thead>tr>th, :where(.css-dev-only-do-not-override-1b0bdye).ant-table-wrapper .ant-table-tbody>tr>th, :where(.css-dev-only-do-not-override-1b0bdye).ant-table-wrapper .ant-table-tbody>tr>td, :where(.css-dev-only-do-not-override-1b0bdye).ant-table-wrapper tfoot>tr>th, :where(.css-dev-only-do-not-override-1b0bdye).ant-table-wrapper tfoot>tr>td {
+  position: relative;
+  padding: 7px 16px;
+  overflow-wrap: break-word;
+}
+
+.action-table-data {
+  display: flex; 
+  /* justify-content: start;  */
+  align-items: center; 
+}
+
+.edit-delete-action {
+  display: flex; /* Use flex for button layout */
+  justify-content: space-between; /* Space between buttons */
+  align-items: center; /* Align items vertically */
+}
+
+.edit-delete-action a {
+  display: flex; /* Make links flex containers */
+  align-items: center; /* Center icons vertically */
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit color from parent */
+}
+
+.edit-delete-action a:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+/* Optional: Add margin to each action button */
+.edit-delete-action a:not(:last-child) {
+  margin-right: 10px; /* Add spacing between buttons */
+}

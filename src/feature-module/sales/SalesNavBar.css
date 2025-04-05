@@ -1,0 +1,185 @@
+/* Header Styling */
+.header-bar {
+    position: fixed; /* Make it fixed to the top */
+    top: 0;
+    width: 100%;
+    z-index: 101; /* Ensure it stays above other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Flex align logo and search bar */
+.header-bar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    max-height: 40px; /* Adjust logo size for better fit */
+}
+
+/* Adjust search bar for responsiveness */
+.search-bar {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.search-bar input {
+    width: 100%; /* Make it fully responsive */
+    border-radius: 25px;
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+.search-group .form-select {
+    border-radius: 0;
+    /* border-top-left-radius: 25px; */
+    /* border-bottom-left-radius: 25px; */
+}
+
+.search-group .form-control {
+    /* border-left: none; */
+    border-right: none;
+}
+
+.search-group .btn-primary {
+    border-radius: 0;
+    /* border-top-right-radius: 25px; */
+    /* border-bottom-right-radius: 25px; */
+}
+
+@media (max-width: 992px) {
+    .header-bar {
+      display: none;
+    }
+  
+    /* Show logo in the mobile drawer header */
+    .drawer-header .logo {
+      display: block;
+    }
+  
+    /* Hide "Menu" title on mobile screens in the drawer */
+    .drawer-header h5 {
+      display: none;
+    }
+  }
+/* Fixing the top navigation bar */
+.top-nav-menu {
+    background: linear-gradient(90deg, rgb(255, 0, 120) 15%, rgb(0, 199, 255) 100%);
+    border: none;
+    padding: 10px 0;
+    position: fixed; /* Make the header fixed */
+    top: 58px;
+    left: 0;
+    width: 100%; /* Ensure the header spans the full width */
+    z-index: 100; /* Ensure the header stays above other content */
+}
+
+/* Add padding to body or main content to prevent overlapping with fixed header */
+.main-content {
+    margin-top: 70px; /* Add padding equivalent to header height */
+}
+
+/* Desktop Navbar Styles */
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-item1 {
+    position: relative;
+    padding: 0 15px;
+}
+
+.nav-link {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    text-decoration: none;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: white;
+    width: 100%;
+}
+
+.dropdown-item {
+    padding: 10px 0;
+    width: 33%; /* Divides into 3 columns */
+    color: #000;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.search-bar input {
+    width: 400px;
+    border-radius: 25px;
+    padding: 5px 15px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+/* Mobile Drawer Styling */
+.mobile-drawer {
+    position: fixed;
+    top: 0;
+    left: -100%; /* Start hidden off-screen from the left */
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Shadow on the right side now */
+    transition: left 0.3s ease; /* Smooth slide-in */
+    z-index: 1000;
+}
+
+.mobile-drawer.open {
+    left: 0; /* Slide in from left */
+}
+
+.drawer-header {
+    border-bottom: 1px solid #ddd;
+}
+
+.drawer-body {
+    padding: 0;
+}
+
+.list-group-item {
+    cursor: pointer;
+}
+
+.sub-menu {
+    padding-left: 20px;
+}
+
+.sub-menu-item {
+    padding: 5px 0;
+}

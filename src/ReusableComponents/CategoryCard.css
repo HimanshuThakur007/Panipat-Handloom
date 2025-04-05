@@ -1,0 +1,38 @@
+.category-card {
+    width: 100%; /* Take full width of the column */
+    max-width: 200px; /* Set a max width to prevent overflowing */
+    height: 140px; /* Fixed height */
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow for rounded effect */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.category-img {
+    height: 100%; /* Ensure the image fills the card height */
+    width: 100%;  /* Ensure the image fills the card width */
+    object-fit: cover; /* Cover the area without distortion */
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.category-card:hover .category-img {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+
+.gradient-text {
+    background: linear-gradient(45deg, #e6317b, #bd529c, #6b94ce);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Safari/Chrome */
+    background-clip: text; /* Non-webkit browsers */
+    color: transparent; /* Fallback for unsupported browsers */
+}
+
+.col-lg-custom {
+    width: 14.28%; /* 100 / 7 to fit 7 cards per row */
+  }
+
+  @media (max-width: 576px) {
+    .col-lg-custom {
+      width: 100% !important; /* Full width on small screens */
+    }
+  }

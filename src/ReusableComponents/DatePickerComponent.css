@@ -1,0 +1,25 @@
+/* DatePickerComponent.css */
+.date-picker-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .date-picker {
+    width: 100%;
+    padding: 8px;
+    padding-right: 40px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 17px;
+  }
+  
+  .calendar-icon {
+    position: absolute;
+    top: 50%;
+    right: 43%; 
+    transform: translateY(-50%);
+    color: #999;
+    pointer-events: none; 
+  }
+  

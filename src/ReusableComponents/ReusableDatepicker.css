@@ -1,0 +1,33 @@
+/* ReusableDatePicker.css */
+.datepicker-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .datepicker-button {
+    background: none;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
+  .datepicker-button.required {
+    border-color: red;
+  }
+  
+  .datepicker-button:focus {
+    outline: none;
+    border-color: blue;
+  }
+  
+  .datepicker-error {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  

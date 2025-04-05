@@ -1,0 +1,18 @@
+.banner-container {
+    position: relative; /* To position any overlays if needed */
+    overflow: hidden; /* Ensure no overflow of the image */
+    margin-bottom: 1.5rem; /* Margin at the bottom for spacing */
+  }
+  
+  .banner-container img {
+    width: 100%; /* Full width of the container */
+    height: 400px; /* Fixed height */
+    object-fit: cover; /* Cover the area without distortion */
+    /* transition: transform 0.3s ease;  */
+  }
+  
+  /* Optional hover effect to zoom in on the image */
+  /* .banner-container img:hover {
+    transform: scale(1.05); 
+  } */
+  

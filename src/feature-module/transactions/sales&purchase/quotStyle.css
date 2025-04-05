@@ -1,0 +1,73 @@
+.bill-sundry-section {
+  border: 1px solid #ccc;
+}
+
+.bill-sundry-item {
+  position: relative;
+}
+
+.bill-sundry-item h6 {
+  font-weight: bold;
+  color: #4e73df;
+}
+
+/* Button Outline Styles */
+.bill-sundry-item .btn-outline {
+  border: none;
+  color: #dc3545;
+  font-size: 1.1rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.bill-sundry-item .btn-outline:focus {
+  background-color: black !important; /* Added !important for override */
+  color: white; /* Optional: make the text visible on black background */
+  outline: none;
+}
+
+/* Input Field Styles */
+.bill-sundry-item input {
+  border: none; /* Remove all borders */
+  border-bottom: 1px solid #ddd; /* Add only bottom border */
+  background: transparent; /* Transparent background */
+  outline: none; /* Remove outline */
+}
+
+.bill-sundry-item input:focus {
+  border-color: #4e73df; /* Change bottom border color on focus */
+  box-shadow: none; /* Prevent shadow from being added */
+  background: transparent;
+}
+
+/* Hide increment/decrement arrows for number inputs */
+.bill-sundry-item input[type="number"]::-webkit-outer-spin-button,
+.bill-sundry-item input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.bill-sundry-item input[type="number"] {
+  -moz-appearance: textfield; /* For Firefox */
+}
+
+/* Specificity boost to avoid conflicts */
+.bill-sundry-item input:focus {
+  border-bottom: 2px solid #4e73df; /* Slightly thicker for better visibility */
+}
+
+/* Button active or hover state */
+.bill-sundry-item .btn-outline:hover,
+.bill-sundry-item .btn-outline:active {
+  background-color: rgb(225, 222, 222);
+  color: red;
+  border-radius: 50px;
+  outline: none;
+}
+
+.plus-down-add-qut {
+  margin-right: 3px;
+  width: 14px;
+  height: 12px;
+  position: relative;
+  top: -1px;
+}

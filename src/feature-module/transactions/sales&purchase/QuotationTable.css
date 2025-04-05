@@ -1,0 +1,144 @@
+.custom-select {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .custom-input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .ant-select-selector,
+  .ant-input-number,
+  .ant-input {
+    border: none !important;
+    /* border-bottom: 1px solid #ccc !important; */
+    width: 100%;
+  }
+  
+  .ant-select {
+    width: 100% !important;
+  }
+
+  /* Remove border from ReactSelect and Ant Select */
+.react-select-container .react-select__control,
+.ant-select-selector {
+  border: none;
+  box-shadow: none !important;
+}
+
+/* Show border-bottom on hover for editable fields */
+.ant-input:hover,
+.ant-input-number:hover,
+.ant-select-selector:hover,
+.react-select-container:hover
+ {
+  border-bottom: 2px solid #1890ff !important;
+  box-shadow: none;
+}
+
+
+
+/* .quotation-table thead.ant-table-thead{
+  background-color: #1F2F5c;
+} */
+
+  
+  /* Row Styling */
+  .quotation-table .ant-table-tbody > tr {
+    transition: all 0.2s ease;
+  }
+  
+  
+
+  /* Editable Input Styling */
+  .ant-input-number,
+  .ant-select {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  /* Button Action Styling */
+
+  .quotation-table {
+    width: 100%;
+    overflow-x: auto; /* Ensure the table can scroll horizontally */
+  }
+  
+  
+    .quotation-table .ant-table-footer {
+      font-size: 12px; /* Adjust footer font size */
+    }
+  
+
+
+  .react-select-container .react-select__control {
+  z-index: 9999 !important; /* Ensures it's above the table */
+}
+
+.react-select-container .react-select__menu {
+  z-index: 9999 !important; /* Ensures the dropdown is above the table */
+}
+
+/* Alternatively, if the above doesn't work, try adding a positioning context */
+.quotation-table .react-select-container {
+  position: relative; /* Ensure it's positioned relative to the table */
+}
+
+.react-select-container .react-select__control,
+.react-select-container .react-select__menu {
+  position: relative;
+  z-index: 9999; /* This ensures dropdown stays above the table */
+}
+  
+  
+/* ===========css for fix save=== */
+.total-amount-container {
+  position: fixed;
+  bottom: 0px;
+  right: 23px;
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: 465px;
+  /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0px 4px 6px linear-gradient(90deg, rgb(255, 0, 120) 15%, rgb(0, 199, 255) 100%);
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.total-amount-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.total-amount-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+.total-amount-actions {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.total-amount-actions button {
+  flex: 1;
+}
+
+.dropdownqot-item {
+  padding: 10px;
+  /* width: 33%; */
+  color: #000;
+}
